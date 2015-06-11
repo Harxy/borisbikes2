@@ -1,6 +1,6 @@
 require_relative 'bike'
 
-class DockingStation 
+class DockingStation
 
   attr_accessor :capacity
 

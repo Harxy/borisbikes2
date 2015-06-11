@@ -1,7 +1,11 @@
-class Bike 
+class Bike
 
   def initialize
     @is_working = true
+  end
+
+  def broken?
+    !@is_working
   end
 
   def working?
@@ -15,4 +19,3 @@ class Bike
 
 
 end
-

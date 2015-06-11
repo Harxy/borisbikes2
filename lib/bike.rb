@@ -1,4 +1,4 @@
-class Bike
+class Bike 
 
   def initialize
     @is_working = true

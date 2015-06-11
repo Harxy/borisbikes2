@@ -6,4 +6,6 @@ describe DockingStation do
 
   end
 
+  it {expect(subject.release_bike).to be_working}
+
 end

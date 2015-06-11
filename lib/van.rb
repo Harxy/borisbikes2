@@ -1,6 +1,6 @@
 require_relative 'docking_station'
 
-class Van 
+class Van
 
   attr_accessor :capacity, :broken_bikes
 
@@ -16,7 +16,7 @@ class Van
 
     station.broken_bikes.each do |broken_bike|
       @broken_bikes << station.broken_bikes.pop unless full?
-    end 
+    end
 
   end
 
@@ -36,27 +36,3 @@ class Van
 
 
 end
-
-x = DockingStation.new
-
-y = Bike.new
-
-y.report_broken
-
-x.dock(y)
-
-z = Van.new
-
-puts x.broken_bikes.to_s
-
-z.load_broken_bikes(x)
-
-puts x.broken_bikes.to_s
-
-puts z.broken_bikes.to_s
-
-
-
-
-
-
